@@ -1,21 +1,14 @@
 {
-  "name": "electron-quick-start",
+  "name": "dictionary",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A Qern dictionary for developing the conlang.",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "repository": "https://github.com/konstaka/dictionary",
+  "author": "Konsta Kanniainen",
+  "license": "See LICENSE",
   "devDependencies": {
     "electron": "^15.3.0"
   }

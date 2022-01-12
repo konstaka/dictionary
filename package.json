@@ -2,14 +2,26 @@
   "name": "dictionary",
   "version": "1.0.0",
   "description": "A Qern dictionary for developing the conlang.",
-  "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint --ext .ts ./src",
+    "start": "npm run build && electron ./dist/main.js"
   },
   "repository": "https://github.com/konstaka/dictionary",
   "author": "Konsta Kanniainen",
   "license": "See LICENSE",
   "devDependencies": {
-    "electron": "^15.3.0"
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "electron": "^16.0.7",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "prettier": "^2.5.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.5.4"
   }
 }

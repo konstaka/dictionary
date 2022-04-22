@@ -12,15 +12,18 @@
   </head>
   <body>
     <h1>Dictionary</h1>
-    Type in the box and watch the translation.
 
-    <form>
-      <input type="text" autofocus />
-    </form>
+    <div id="description">Type in the box and watch the translation.</div>
 
-    <div id="responses"></div>
+    <div id="inputBox">
+      <input id="inputString" type="text" autofocus />
+    </div>
+
+    <div id="resultContainer">
+      <div id="result"></div>
+    </div>
 
     <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+    <script src="dist/renderer.js"></script>
   </body>
 </html>

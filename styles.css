@@ -1,3 +1,27 @@
 /* styles.css */
 
 /* Add styles here to customize the appearance of your app */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#description {
+  margin-bottom: inherit;
+}
+
+#resultContainer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+#result {
+  align-self: center;
+}

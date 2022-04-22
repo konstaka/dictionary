@@ -4,3 +4,12 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+
+function handleInput(this: HTMLElement, ev: Event) {
+  ev.preventDefault();
+  const input = (ev.target as HTMLInputElement).value;
+  console.log(input);
+  document.getElementById('result').innerHTML = input;
+}
+
+document.getElementById('inputString').addEventListener('input', handleInput);

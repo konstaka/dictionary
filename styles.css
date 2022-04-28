@@ -2,6 +2,11 @@
 
 /* Add styles here to customize the appearance of your app */
 
+@font-face {
+  font-family: 'qern';
+  src: url('./qern.ttf');
+}
+
 html,
 body {
   height: 100%;
@@ -23,5 +28,6 @@ body {
 }
 
 #result {
+  font-family: 'qern';
   align-self: center;
 }

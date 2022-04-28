@@ -8,7 +8,11 @@
 class Char {
   char: string;
   constructor(ch: string) {
-    this.char = ch;
+    this.char = ch
+      .toLowerCase()
+      .replace(/ä/g, 'A')
+      .replace(/ö/g, 'O')
+      .replace(/[cqwxzå]/g, '');
   }
   toString() {
     return this.char;
@@ -24,7 +28,10 @@ class Word {
   chars: Char[] = [];
   constructor(word: string) {
     for (const char of word.split('')) {
-      this.chars.push(new Char(char));
+      const charObj = new Char(char);
+      if (charObj.toString()) {
+        this.chars.push(new Char(char));
+      }
     }
   }
   toString() {
